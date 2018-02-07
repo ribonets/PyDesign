@@ -72,6 +72,7 @@ def read_input_additions(content):
 
     lines = content.split("\n")
     for line in lines:
+        line = line.upper();
         # if line begins with a semicolon ; stop parsing
         if re.match(re.compile("^\;"), line, flags=0):
             break
